@@ -9,8 +9,7 @@ export const BUG_REPORTING_PHASE_SESSION_DATA: SessionData = {
   [Phase.phaseModeration]: 'pe-evaluation'
 };
 
-export const MODERATION_PHASE_SESSION_DATA: SessionData = 
-{
+export const MODERATION_PHASE_SESSION_DATA: SessionData = {
   ...BUG_REPORTING_PHASE_SESSION_DATA,
   openPhases: [Phase.phaseModeration]
 };
@@ -22,6 +21,5 @@ export const NO_OPEN_PHASES_SESSION_DATA: SessionData = {
 
 export const MULTIPLE_OPEN_PHASES_SESSION_DATA: SessionData = {
   ...BUG_REPORTING_PHASE_SESSION_DATA,
-  openPhases: [Phase.phaseBugReporting, 
-    Phase.phaseTeamResponse, Phase.phaseTesterResponse, Phase.phaseModeration]
+  openPhases: [Phase.phaseBugReporting, Phase.phaseTeamResponse, Phase.phaseTesterResponse, Phase.phaseModeration]
 };
